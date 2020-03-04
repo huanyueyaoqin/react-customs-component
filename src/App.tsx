@@ -1,6 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import BackTop from "./components/BackTop";
+import { Button } from "antd";
 
 function App() {
   return (
@@ -19,6 +21,11 @@ function App() {
           Learn React
         </a>
       </header>
+      <BackTop
+        callbackBeforescrolling={() => console.log("before")}
+        callbackAfterscrolling={() => console.log("after")}
+      />
+      <Button type="primary">Button</Button>
     </div>
   );
 }
