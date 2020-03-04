@@ -2,8 +2,8 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import BackTop from "./components/BackTop";
-import { Button } from "antd";
-
+import { Button, Icon } from "antd";
+import "./style/common.less";
 function App() {
   return (
     <div className="App">
@@ -24,6 +24,7 @@ function App() {
       <BackTop
         callbackBeforescrolling={() => console.log("before")}
         callbackAfterscrolling={() => console.log("after")}
+        content={<Icon type="arrow-up" />}
       />
       <Button type="primary">Button</Button>
     </div>

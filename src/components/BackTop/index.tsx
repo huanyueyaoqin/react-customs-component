@@ -6,7 +6,7 @@ interface IBackTopProps {
   visibilityHeight?: number;
   callbackBeforescrolling?: Function;
   callbackAfterscrolling?: Function;
-  content?: React.Component | Text;
+  content?: any;
   style?: React.CSSProperties;
 }
 
