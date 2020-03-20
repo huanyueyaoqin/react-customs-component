@@ -42,5 +42,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/qs": "^6.9.1",
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "qs": "^6.9.1"
   }
 }
